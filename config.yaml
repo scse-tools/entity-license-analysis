@@ -1,0 +1,28 @@
+
+# Stellar Cyber DP (API server)
+stellar_dp: "someserver.stellarcyber.cloud"
+
+# stellar DP credentials
+stellar_user: "user@widgets.com"
+stellar_api_key: "<API key>"
+stellar_saas: true
+
+# if using the newer user scoped keys, set to true
+#stellar_new_rbac_user_auth: true
+
+# number of days back from today to pull data - must be 1 or greater
+days_back_to_query: 60
+
+# filename for output - used for summary script only
+csv_filename: 'entity_summary.csv'
+
+### the following is used by the analysis script only - not needed for the summary script
+# webhook receiver configuration - used for analysis only
+# COE
+#webhook_ingest_url: "webhook url"
+#webhook_ingest_key: "<api key>"
+
+## batch size (number of records to write at once) when pushing data up to the webhook
+#batch_record_size: 100
+#record_tag: "wd02"
+
